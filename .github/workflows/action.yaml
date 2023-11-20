@@ -43,3 +43,4 @@ jobs:
           script: |
             cd project_with_posts_docker_ci
             echo ${{ secrets.PASSWORD }} | sudo -S docker-compose up -d
+# Изменить HOST в секретах
