@@ -6,7 +6,7 @@ services:
     image: rafacom/project_with_posts
     build: .
     ports:
-      - "80:8080"
+      - "80:80"
     volumes:
       - ./uploads:/app/uploads
       - ./posts.json:/app/posts.json
