@@ -3,7 +3,7 @@ version: '3.11'
 services:
   web:
     platform: linux/amd64
-    image: rafacom/test_docker_compose_1:$GITHUB_REF_NAME-$GITHUB_RUN_ID
+    image: rafacom/project_with_posts:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
       - "80:80"
     volumes:
