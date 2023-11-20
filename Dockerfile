@@ -14,4 +14,5 @@ RUN python3 -m pip install -r requirements.txt
 #COPY entrypoint.sh .
 COPY . .
 
-CMD ["sh", "entrypoint.sh"]
+# ["sh", "entrypoint.sh"]
+CMD flask run -h 0.0.0.0 -p 80
