@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  web:
+    platform: linux/amd64
+    image: rafacom/project_with_posts
+    build: .
+    ports:
+      - "80:8080"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./posts.json:/app/posts.json
+    restart: always
+
