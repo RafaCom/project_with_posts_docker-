@@ -8,7 +8,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./uploads/images:/app/uploads/images
-      - ./posts/posts.json:/app/posts/posts.json
+      - /home/testuser/project_with_posts_docker_ci/uploads/images:/app/uploads/images
+      - /home/testuser/project_with_posts_docker_ci/posts:/app/posts
     restart: always
 
