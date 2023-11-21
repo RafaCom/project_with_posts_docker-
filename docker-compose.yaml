@@ -8,7 +8,9 @@ services:
     ports:
       - "80:80"
     volumes:
-      - /home/testuser/project_with_posts_docker_ci/uploads/images:/app/uploads/images
-      - /home/testuser/project_with_posts_docker_ci/posts:/app/posts
+       - /Users/rafaelsirinan/Desktop/Python_projects/hosting_deployment/Docker/project_with_posts_docker/posts:/app/posts
+       - /Users/rafaelsirinan/Desktop/Python_projects/hosting_deployment/Docker/project_with_posts_docker/uploads/images:/app/uploads/images
+#      - /home/testuser/project_with_posts_docker_ci/uploads/images:/app/uploads/images
+#      - /home/testuser/project_with_posts_docker_ci/posts:/app/posts
     restart: always
 
