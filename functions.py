@@ -12,7 +12,8 @@ logging.basicConfig(filename="log.log", encoding='utf-8', level=logging.INFO)
 try:
     with open('posts/posts.json', "r", encoding='utf-8') as f:
         publication = json.load(f)
-except FileNotFoundError:
+except FileNotFoundError as err:
+    print(err)
     print('Файл не найден')
 except JSONDecodeError:
     print('Файл не удается преобразовать')
