@@ -10,7 +10,7 @@ logging.basicConfig(filename="log.log", encoding='utf-8', level=logging.INFO)
 
 # Скачиваем json файл
 try:
-    with open('posts/posts.json', "r", encoding='utf-8') as f:
+    with open('./posts/posts.json', "r", encoding='utf-8') as f:
         publication = json.load(f)
 except FileNotFoundError as err:
     print(err)
@@ -49,7 +49,7 @@ def loading(picture_name, content_name):
                 # добавляем пост в список
                 publication_dict = {'pic': f'./uploads/images/{filename}', 'content': content}
                 publication.insert(0, publication_dict)
-                with open('posts/posts.json', 'w') as file:
+                with open('./posts/posts.json', 'w') as file:
                     json.dump(publication, file, indent=4, ensure_ascii=False)
                 return render_template('post_uploaded.html', picture=filename, text=content)
 
