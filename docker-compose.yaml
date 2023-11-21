@@ -8,7 +8,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./uploads:/app/uploads
-      - ./posts.json:/app/posts.json
+      - ./uploads/images:/app/uploads/images
+      - ./posts/posts.json:/app/posts/posts.json
     restart: always
 

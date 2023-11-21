@@ -9,7 +9,7 @@ from functions import loading, found_posts_func
 from main.main import main_blueprint
 from loader.loader import loader_blueprint
 
-POST_PATH = "posts.json"
+POST_PATH = "posts/posts.json"
 UPLOAD_FOLDER = "uploads/images"
 
 app = Flask(__name__)
