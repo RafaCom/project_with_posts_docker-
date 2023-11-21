@@ -8,5 +8,5 @@ services:
       - "80:80"
     volumes:
       - /home/testuser/project_with_posts_docker_ci/uploads/images:/app/uploads/images
-      - /home/testuser/project_with_posts_docker_ci/posts:/app/posts
+      - /home/testuser/project_with_posts_docker_ci/posts/posts.json:/app/posts
     restart: always
