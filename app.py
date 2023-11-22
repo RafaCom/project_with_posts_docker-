@@ -15,7 +15,7 @@ UPLOAD_FOLDER = "uploads/images"
 app = Flask(__name__)
 
 # Ограничиваем размер файла
-app.config['MAX_CONTENT_LENGTH'] = 3 * 1024 * 1024
+app.config['MAX_CONTENT_LENGTH'] = 2 * 3840 * 2160
 
 
 @app.errorhandler(413)
