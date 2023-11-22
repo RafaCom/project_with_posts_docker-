@@ -33,14 +33,14 @@ jobs:
           source: "deploy/docker-compose.yaml"
           target: "project_with_posts_docker_ci"
           strip_components: 1
-      - name: copy posts to server
-        uses: appleboy/scp-action@master
-        with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.KEY }}
-          source: "posts/posts.json"
-          target: "project_with_posts_docker_ci"
+#      - name: copy posts to server
+#        uses: appleboy/scp-action@master
+#        with:
+#          host: ${{ secrets.HOST }}
+#          username: ${{ secrets.USERNAME }}
+#          key: ${{ secrets.KEY }}
+#          source: "posts/posts.json"
+#          target: "project_with_posts_docker_ci"
       - name: deploy app
         uses: appleboy/ssh-action@v1.0.0
         with:
